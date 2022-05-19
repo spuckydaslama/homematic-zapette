@@ -28,7 +28,7 @@ const config = {
 	experimental: {
 		inspector: {
 			toggleKeyCombo: 'control-shift',
-			holdMode: true,
+			holdMode: true
 		}
 	}
 };
