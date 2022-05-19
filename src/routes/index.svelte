@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import BrollSwitchUpDown from '../lib/components/controls/BrollSwitchUpDown.svelte';
+</script>
+
+<div class="flex w-56">
+	<BrollSwitchUpDown />
+</div>
