@@ -24,6 +24,12 @@ const config = {
 		prerender: {
 			default: true
 		}
+	},
+	experimental: {
+		inspector: {
+			toggleKeyCombo: 'control-shift',
+			holdMode: true,
+		}
 	}
 };
 
