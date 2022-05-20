@@ -7,8 +7,8 @@
 	class:border-amber-700={!pressed}
 	class:text-amber-300={pressed}
 	class:text-amber-700={!pressed}
-	class="w-full object-contain border-2"
+	class="border-2 bg-blue-600 flex justify-center"
 	on:click
 >
-	<slot name="icon" />
+	<slot />
 </button>

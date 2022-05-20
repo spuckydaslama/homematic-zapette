@@ -34,11 +34,17 @@
 	};
 </script>
 
-<div class="w-full flex flex-col gap-1">
+<div class="grid grid-cols-1 gap-1">
 	<ZapButton on:click={handleUpClicked} pressed={upPressed}>
-		<IconChevronUp slot="icon" />
+		<IconChevronUp class="h-[48vh]" />
 	</ZapButton>
 	<ZapButton on:click={handleDownClicked} pressed={downPressed}>
-		<IconChevronDown slot="icon" />
+		<IconChevronDown class="h-[48vh]" />
 	</ZapButton>
 </div>
+
+<style>
+	/*:global(.icon) {*/
+	/*	height: 20vh;*/
+	/*}*/
+</style>

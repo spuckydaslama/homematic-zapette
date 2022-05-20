@@ -2,6 +2,6 @@
 	import BrollSwitchUpDown from '../lib/components/controls/BrollSwitchUpDown.svelte';
 </script>
 
-<div class="flex w-56">
+<div class="boardContainer grid grid-cols-2">
 	<BrollSwitchUpDown />
 </div>
