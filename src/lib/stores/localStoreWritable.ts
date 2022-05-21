@@ -6,9 +6,8 @@ export const localStoreWritable: <T>(key: string, defaultInitialValue: T) => Wri
 	key,
 	defaultInitialValue
 ) => {
-	const initialValue = browser
-		? JSON.parse(localStorage.getItem(key) || '') || defaultInitialValue
-		: defaultInitialValue;
+	const localStorageItem: string | null = browser ? localStorage.getItem(key) : null;
+	const initialValue = (localStorageItem && JSON.parse(localStorageItem)) || defaultInitialValue;
 	const store = writable(initialValue);
 	store.subscribe((value) => {
 		if (browser) {

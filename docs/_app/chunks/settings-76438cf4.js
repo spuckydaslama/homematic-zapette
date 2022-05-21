@@ -1,0 +1,1 @@
+import{w as s}from"./index-df02d158.js";const c=(t,e)=>{const o=localStorage.getItem(t),l=o&&JSON.parse(o)||e,a=s(l);return a.subscribe(r=>{localStorage.setItem(t,JSON.stringify(r))}),a},i="Basic YXBpdXNlcjpkYW5pZWw=",p=c("authToken",i),n={}.VITE_CCU3_URL||"",S=c("ccu3url",n);export{p as a,S as c};
