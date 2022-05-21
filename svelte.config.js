@@ -18,6 +18,7 @@ const config = {
 			pages: 'docs',
 			assets: 'docs'
 		}),
+		trailingSlash: 'always',
 		paths: {
 			base: dev ? '' : '/homematic-zapette'
 		},

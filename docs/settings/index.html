@@ -10,23 +10,23 @@
 	<link rel="modulepreload" href="/homematic-zapette/_app/chunks/index-07a763f6.js">
 	<link rel="modulepreload" href="/homematic-zapette/_app/chunks/index-df02d158.js">
 	<link rel="modulepreload" href="/homematic-zapette/_app/pages/__layout.svelte-0b228abc.js">
-	<link rel="modulepreload" href="/homematic-zapette/_app/pages/index.svelte-5975b9aa.js">
+	<link rel="modulepreload" href="/homematic-zapette/_app/pages/settings/index.svelte-dddf72f9.js">
 	<link rel="modulepreload" href="/homematic-zapette/_app/chunks/settings-a6bef52a.js">
 	</head>
 	<body>
 		<div>
 
 
-<div class="grid grid-cols-2 gap-4 h-screen p-2 grid-rows-2"><div class="flex items-stretch"><div class="grid grid-cols-1 gap-1 w-full"><button class="border-2 bg-blue-700 flex justify-center items-center  border-blue-700  text-amber-500"><span class="text-3xl">Up</span>
-		</button><button class="border-2 bg-blue-700 flex justify-center items-center  border-blue-700  text-amber-500"><span class="text-3xl">Stop</span>
-		</button><button class="border-2 bg-blue-700 flex justify-center items-center  border-blue-700  text-amber-500"><span class="text-3xl">Down</span>
-		</button></div></div></div>
+<div class="m-2 ml-8 mr-8 flex flex-col gap-2"><div class="flex items-center gap-1"><label for="authToken" class="after:content-['_*'] text-white">Auth Token</label>
+		<input id="authToken" name="authToken" type="text" class="grow rounded border-2 bg-zinc-800 text-white  border-zinc-600" value="Basic YXBpdXNlcjpkYW5pZWw="></div>
+	<div class="flex items-center gap-1"><label for="ccu3Url" class="after:content-['_*'] text-white">ccu3 Url</label>
+		<input id="ccu3Url" name="ccu3Url" type="text" class="grow rounded border-2 bg-zinc-800 text-white border-rose-500" value=""></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="d5oc1o">
+		<script type="module" data-sveltekit-hydrate="1s5phc7">
 		import { start } from "/homematic-zapette/_app/start-ef946f9e.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="d5oc1o"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1s5phc7"]').parentNode,
 			paths: {"base":"/homematic-zapette","assets":"/homematic-zapette"},
 			session: {},
 			route: true,
@@ -37,10 +37,10 @@
 				error: null,
 				nodes: [
 					import("/homematic-zapette/_app/pages/__layout.svelte-0b228abc.js"),
-						import("/homematic-zapette/_app/pages/index.svelte-5975b9aa.js")
+						import("/homematic-zapette/_app/pages/settings/index.svelte-dddf72f9.js")
 				],
 				params: {},
-				routeId: ""
+				routeId: "settings"
 			}
 		});
 	</script></div>
