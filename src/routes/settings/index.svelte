@@ -5,7 +5,7 @@
 
 <div class="m-2 ml-8 mr-8 flex flex-col gap-2">
 	<div class="flex items-center gap-1">
-		<label for="ccu3Url" class="after:content-['_*'] text-white">ccu3 Url</label>
+		<label for="ccu3Url" class="after:content-['_*'] text-white">ccu3 Url (with trailing slash)</label>
 		<input
 			id="ccu3Url"
 			name="ccu3Url"
