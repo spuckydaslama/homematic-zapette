@@ -6,10 +6,10 @@
 	let url = $ccu3Url;
 
 	$: handleMouseDown = (event: CustomEvent) => {
-		if (!token || !url) {
+		if (!url) {
 			return;
 		}
-		const headers = { Authorization: token };
+		const headers = token && { Authorization: token } || {};
 		if (event.detail === 'up') {
 			fetch(`${url}/device/00111D89B79C33/4/LEVEL`, {
 				method: 'PUT',
