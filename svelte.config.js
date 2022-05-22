@@ -15,12 +15,12 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs'
+			pages: 'build',
+			assets: 'build'
 		}),
 		trailingSlash: 'always',
 		paths: {
-			base: dev ? '' : '/homematic-zapette'
+			base: dev ? '' : '/ui/homematic-zapette'
 		},
 		prerender: {
 			default: true
