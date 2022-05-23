@@ -9,7 +9,7 @@
 		if (!url) {
 			return;
 		}
-		const headers = token && { Authorization: token } || {};
+		const headers = (token && { Authorization: token }) || {};
 		if (event.detail === 'up') {
 			fetch(`${url}device/00111D89B79C33/4/LEVEL/~pv`, {
 				method: 'PUT',
